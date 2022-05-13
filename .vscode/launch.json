@@ -1,8 +1,17 @@
 {
     "version": "0.2.0",
+    "compounds": [
+        {
+            "name": "Launch All 🚀",
+            "configurations": [
+                "Launch Server",
+                "Launch Client"
+            ]
+        }
+    ],
     "configurations": [
         {
-            "name": "Launch Server",
+            "name": "Launch Client",
             "type": "pwa-node",
             "request": "launch",
             "console": "integratedTerminal",
@@ -13,7 +22,7 @@
             "cwd": "${workspaceFolder}/client",
         },
         {
-            "name": "Launch Client",
+            "name": "Launch Server",
             "type": "node",
             "request": "launch",
             "console": "integratedTerminal",
@@ -21,13 +30,4 @@
             "cwd": "${workspaceFolder}/server",
         }
     ],
-    "compounds": [
-        {
-            "name": "Server/Client",
-            "configurations": [
-                "Launch Server",
-                "Launch Client"
-            ]
-        }
-    ]
 }
