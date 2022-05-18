@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Install angular globally
+npm install -g @angular/cli
+
 # Server
 mkdir -p /workspaces/product-trial/server
 pushd /workspaces/product-trial/server
@@ -16,5 +19,3 @@ ng build
 popd
 
 
-# Install angular globally
-npm install -g @angular/cli
